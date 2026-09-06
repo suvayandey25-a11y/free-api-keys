@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free API Keys - All Models</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔑 Free API Keys Hub</h1>
+            <p class="subtitle">Access free API keys for popular AI models and services</p>
+        </header>
+
+        <div class="search-section">
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-box" 
+                placeholder="Search API keys..."
+            >
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">AI Models</button>
+            <button class="filter-btn" data-filter="nlp">NLP</button>
+            <button class="filter-btn" data-filter="vision">Vision</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+
+        <div id="apiGrid" class="api-grid">
+            <!-- API cards will be dynamically loaded here -->
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Free API Keys Hub. Contribute on <a href="https://github.com/suvayandey25-a11y/free-api-keys" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
